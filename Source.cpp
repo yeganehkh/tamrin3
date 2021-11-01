@@ -1,37 +1,30 @@
+
 #include<iostream>
 using namespace std;
 
+void p(string a, int n);
+
 int main()
 {
-	int x;
+	int x, y;
 
-	int Factorial = 1;
-
-	int y = 0;
-
-	cout << "please Eter a number:";
+	cout << "enter your rows: "<< endl ;
 	cin >> x;
 
-	for (int i = 1; i <= x; i++)
-	{
-		Factorial *= i;
-		if (Factorial == x)
-		{
-			cout << "factorial:"<<endl;
+	cout << "enter your columns: "<< endl;
+	cin >> y;
 
-			y = 1;
-			system("pause");
-		}
+	for (int i = 0; i < y; i++) {
+		cout << endl;
+		p(" *# ", x);
 
 	}
-
-	if (y == 0)
+}
+void p(string a, int y)
+{
+	for (int i = 1; i <= y; i++)
 	{
-		cout << "no";
+		cout << a;
+
 	}
-
-	cout << endl;
-
-	cout << "bye"<< endl;
-
 }
